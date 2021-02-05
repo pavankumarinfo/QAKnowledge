@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>QA-FIT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>QA-FIT (Future Implementation Thoughts)</h1>
+        <table border="1"><tr><td>SL.No</td><td>Thoughts</td><td>What it simplifies</td><td>Audience</td></tr>
+        <tr><td>1.</td><td>Centralized recording of test results of different stories and its results. One location of recording and verifying and tracking of test cases and results.
+
+            Benefits:
+            
+            We can use this test cases as regression suite of future automations.
+            No need to create many excel files for different environments and different stories. i.e., save digital wastage.
+            <table border="1"><tr>
+                <td>AppName</td>
+                <td>StoryNumber</td>
+                <td>TestCase</td>
+                <td>Manual/Automation</td<>
+                <td>Env Tested</td>
+                <td>Result</td>
+                <td>Release</td>
+                <td>Build Number</td>
+                <td>Deployed Status</td>
+                </tr>
+                <tr>
+                    <td>HTMLApp1</td>
+                    <td>10001</td>
+                    <td>Verified the HTML landing page is shown successful</td>
+                    <td>Test/Beta/Prod environments</td>
+                    <td>Pass</td>
+                    <td>https://octopus/app/htmlapp/Builds/1000</td>
+                    <td>101</td>
+                    <td>Deployed</td>
+                </tr></table>
+            </td>
+            <td>
+                1. Avoid adding Environment (Test/Beta/Prod) excel files
+                    a. No need to create lot of files (3 files for each story) different stories and in all squads and sprints.
+                2. Easy tracking results for stories and sprints using one location.
+            </td>
+            <td>
+                Team members, Business Owners, Leaders
+            </td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td></td><td></td><td></td>
+        </tr>
+        </table>
+        <script src="" async defer></script>
+    </body>
+</html>
