@@ -1,0 +1,23 @@
+## Selenium FAQ
+
+1.	.Net basics: https://www.youtube.com/watch?v=1Q4I63-hKcY&t=323s 
+2.	What is Xunit test frameworks in .Net? https://www.youtube.com/watch?v=M9kyaVo4qkY 
+3.	How to do selenium in .Net Core? https://www.youtube.com/watch?v=e1-XWjpp_XU 
+4.	What is Selenium used for ? What type of automation we could do with it?
+  a.	Selenium is an automation framework which intracts with browser and navigate and fill html controls for making automating of test flows.
+i.	Example : we could do different automation for Web Applications (html5, react js, angular sites, single page websites, etc).
+5.	What is POM? 
+  a.	POM is a test framework , which is also called Page Object Model Test Framework. It has mainly 3 parts : 
+      i.	Page class: this is an class file, where we define all page elements using identifier of an element like name, id, alias, title, tag, xpath, dropdown id, etc.
+      ii.	Model class: This is an class file, where we write functionality of page we are working on like simple (modalized) flows specific to the page.
+      iii.	Object/Test Class: This is class file, where write E2E flows using different page objects/model objects to implement specific business flow.
+6.	What type of page identifiers are available? https://www.lambdatest.com/blog/locators-in-selenium-webdriver-with-examples/ 
+7.	How do we select dropdown item using .net selenium? https://www.toolsqa.com/selenium-webdriver/dropdown-in-selenium/ 
+8.	Little overview of POM? https://www.toptal.com/selenium/test-automation-in-selenium-using-page-object-model-and-page-factory 
+9.	What is cross browser testing?
+    a.	Validating the web application automation script runs for different browser versions. (eg: chrome vs firefox, IE6 vs IE9, etc) based on business website acceptance.
+    b.	This cross-browser testing done with different instance created within code. Like opening 2 browsers at the same time or sequential and perform same selenium script.
+    c.	This can also be implemented using ‘BrowserStack’ third party tool. https://www.browserstack.com/guide/locators-in-selenium 
+10.	Implicit wait vs explicit wait : https://www.guru99.com/implicit-explicit-waits-selenium.html 
+    a.	https://www.youtube.com/watch?v=5j_jGwijAo0 (Implicit Wait, Explicit Wait and Fluent Wait in Selenium)
+11.	What is selenium Grid used for selenium testing? https://www.youtube.com/watch?v=U1jJsV_YKC8 
