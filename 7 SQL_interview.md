@@ -65,3 +65,34 @@
 
 ## What is a stored procedure and how is it used in SQL?
    Answer: A stored procedure is a precompiled SQL code that is stored in the database and can be executed by calling it from an application or another SQL statement. Stored procedures can be used to perform complex database operations and can also be used to improve query performance.
+   
+## how many types of sub-query are available in sql and provide examples
+There are several types of sub-queries in SQL. Here are some of the most commonly used types with examples:
+
+  ###  Scalar sub-query: A scalar sub-query returns a single value, which can be used as an expression in the outer query. 
+  For example:
+
+    SELECT first_name, last_name, (SELECT MAX(salary) FROM employees) AS max_salary FROM employees;
+    
+    This query returns the first name, last name, and maximum salary from the employees table. The scalar sub-query (SELECT MAX(salary) FROM employees) returns a single value (the maximum salary) which is used as an expression in the outer query.
+
+  ### Correlated sub-query: A correlated sub-query is a sub-query that refers to a column from the outer query. 
+    
+  For example:
+            SELECT first_name, last_name
+        FROM employees e
+        WHERE salary > (SELECT AVG(salary) FROM employees WHERE department_id = e.department_id);
+
+    This query returns the first name and last name of employees whose salary is greater than the average salary of their department. The correlated sub-query (SELECT AVG(salary) FROM employees WHERE department_id = e.department_id) refers to the department ID column from the outer query.
+    
+  ### In-line view sub-query: An in-line view sub-query is a sub-query that is used as a table expression in the outer query. 
+    
+    For example:
+        SELECT e.first_name, e.last_name, d.department_name
+        FROM employees e, (SELECT * FROM departments WHERE department_name LIKE 'Sales%') d
+        WHERE e.department_id = d.department_id;
+
+        This query returns the first name, last name, and department name of employees who work in a department whose name starts with "Sales". The in-line view sub-query (SELECT * FROM departments WHERE department_name LIKE 'Sales%') is used as a table expression in the outer query.
+        
+        Overall, sub-queries are a powerful feature of SQL that allow you to perform complex queries and data analysis. By understanding the different types of sub-queries and how they can be used, you can write more efficient and effective SQL queries.
+
